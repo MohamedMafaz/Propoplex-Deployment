@@ -1,0 +1,14 @@
+ {
+     "builds": [
+         {
+             "src": "Propoplex-Deployment/index.py",
+             "use": "@vercel/python"
+         }
+     ],
+     "routes": [
+         {
+             "src": "/(.*)",
+             "dest": "Propoplex-Deployment/index.py"
+         }
+     ]
+ }
